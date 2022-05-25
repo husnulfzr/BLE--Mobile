@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/nav_graph"
+        app:startDestination="@id/storedKeyFragment">
+
+    <fragment
+            android:id="@+id/storedKeyFragment"
+            android:name="co.igloohome.igloohome_sdk_demo.storedkeys.StoredKeyFragment"
+            android:label="StoredKeyFragment"
+            tools:layout="@layout/fragment_storedkey_list">
+        <action
+                android:id="@+id/action_storedKeyFragment_to_bleScannerFragment"
+                app:destination="@id/bleScannerFragment" />
+        <action
+                android:id="@+id/action_storedKeyFragment_to_lockFragment"
+                app:destination="@id/lockFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/bleScannerFragment"
+            android:name="co.igloohome.igloohome_sdk_demo.scanner.BleScannerFragment"
+            android:label="fragment_ble_scanner"
+            tools:layout="@layout/fragment_ble_scanner" >
+        <action
+                android:id="@+id/action_bleScannerFragment_to_lockFragment"
+                app:destination="@id/lockFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/lockFragment"
+            android:name="co.igloohome.igloohome_sdk_demo.lock.LockFragment"
+            android:label="fragment_lock"
+            tools:layout="@layout/fragment_lock" />
+</navigation>

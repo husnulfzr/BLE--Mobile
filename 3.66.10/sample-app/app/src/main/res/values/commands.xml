@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="ble_commands_unpaired">
+        <item>Pair</item>
+    </array>
+    <array name="ble_commands_paired">
+        <item>Unlock</item>
+        <item>Unpair</item>
+        <item>Edit Master PIN</item>
+        <item>Set Sensor Relock Timer</item>
+        <item>Set Volume</item>
+        <item>Set Max Incorrect PINs</item>
+        <item>Get Battery Level</item>
+        <item>Enable Keycard Registration</item>
+        <item>Enable Keycard De-Registration</item>
+        <item>Create Bluetooth PIN</item>
+        <item>Edit PIN</item>
+        <item>Delete PIN</item>
+        <item>Get Lock Status</item>
+        <item>Set Time</item>
+        <item>Get Activity Log</item>
+    </array>
+</resources>
